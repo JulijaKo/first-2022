@@ -19,8 +19,8 @@ public class FirstSeleniumTest {
         browser.get("http://www.discovercars.com/");
 
         WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(ACCEPT_COOKIES_BTN));
 
+        wait.until(ExpectedConditions.elementToBeClickable(ACCEPT_COOKIES_BTN));
         browser.findElement(ACCEPT_COOKIES_BTN).click();
     }
 }
